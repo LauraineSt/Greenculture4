@@ -2581,6 +2581,9 @@ body.menu-open {
 .testimonials {
   padding: 32px 20px 64px;
   background-color: #ECEFED;
+  text-align: center; 
+  
+  /* Centraliza texto */
 }
 
 .testimonials-header {
@@ -2600,28 +2603,24 @@ body.menu-open {
   font-size: 16px;
   line-height: 24px;
   margin-top: 20px;
+  
 }
 
 .testimonials-grid {
   margin-top: 48px;
+  
 }
 
-.testimonial-card {
+.testimonial-card + .testimonial-card {
+  margin-top: 32px;
   background-color: #D9E0DC;
   border-radius: 8px;
   padding: 24px;
 }
 
-.testimonial-card + .testimonial-card {
-  margin-top: 32px;
-}
-
 .stars {
   display: flex;
   gap: 4px;
-}
-
-.star {
   width: 20px;
   aspect-ratio: 1.05;
   object-fit: contain;
@@ -2638,6 +2637,9 @@ body.menu-open {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  align-items: center; 
+  
+  /* Centraliza imagem e texto do autor */
 }
 
 .author-image {
@@ -6439,5 +6441,45 @@ body {
     cursor: pointer;
     font-family: inherit;
   }
+  @media (max-width: 767px) {
+    .hero-heading {
+      font-size: 28px;
+      line-height: 36px;
+    }
   
+    .section-title,
+    .gallery-title,
+    .booking-title,
+    .cta-heading {
+      font-size: 24px;
+      line-height: 32px;
+    }
   
+    .card-heading,
+    .feature-heading,
+    .testimonial-quote {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  
+    .hero-description,
+    .card-description,
+    .feature-description,
+    .booking-description,
+    .gallery-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .booking-button,
+    .help-button {
+      min-width: unset;
+      width: 100%;
+    }
+  
+    .booking-action,
+    .cta-action {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
