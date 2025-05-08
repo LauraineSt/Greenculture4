@@ -58,42 +58,27 @@
         </p>
       </div>
     </section>
-
-    <section class="signup-section">
-      <h2 class="signup-title">Inscrever-se</h2>
-      <form class="signup-form">
-        <div class="form-fields">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-input"
-              placeholder="Nome"
-              aria-label="Nome"
-            />
-            <input
-              type="email"
-              class="form-input"
-              placeholder="Email"
-              aria-label="Email"
-            />
-            <input
-              type="password"
-              class="form-input"
-              placeholder="Password"
-              aria-label="Password"
-            />
+    <main class="main">
+      <h2 class="main__title">Criar conta</h2>
+      <div class="registration">
+        <form class="form" id="registrationForm" action="#" method="POST">
+          <div class="form__fields">
+            <input type="text" class="form__input" placeholder="Nome" aria-label="Nome" required>
+            <input type="email" class="form__input" placeholder="Email" aria-label="Email" required>
+            <input type="password" class="form__input" placeholder="Password" aria-label="Password" required>
           </div>
-        </div>
-        <div class="terms-checkbox">
-          <div class="checkbox"></div>
-          <label class="terms-label">Aceito os Termos</label>
-        </div>
-        <a href="minhapagina.html" class="submit-button">
-          Iniciar sessão
-        </a>
-      </form>
-    </section>
-  </main>
+          <div class="checkbox-container">
+            <div class="terms-checkbox">
+              <input type="checkbox" id="terms" class="checkbox-input" required>
+              <label for="terms" class="checkbox-label">Aceito os Termos</label>
+            </div>
+          </div>
+          <button type="submit" class="form__submit">Iniciar sessão</button>
+        </form>
+      </div>
+    </main>
+
+       
       
   <!-- Footer -->
   <footer class="main-footer">

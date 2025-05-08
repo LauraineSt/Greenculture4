@@ -35,3 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+  // Verifica se o formulário é válido
+  if (this.checkValidity()) {
+    event.preventDefault(); // Impede o envio padrão
+    window.location.href = 'minhapagina.html'; // Redireciona
+  }
+  // Se não for válido, o navegador mostra os avisos padrão
+});
